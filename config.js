@@ -2,7 +2,7 @@
 const config = {
     style: "mapbox://styles/mapbox/light-v10",
     accessToken: "pk.eyJ1IjoiamVubmlmZXJwZmVpbCIsImEiOiJja2puNzZpdW0wcjN6MnluMDY0MWQyM21pIn0.qfZ6ocRVbznPiGbB-omH3Q",
-    CSV: "/Users/jennypfeil/Documents/Project2/naturalareasdata.csv",
+    CSV: "https://raw.githubusercontent.com/JennyPfeil/Mapping-Natural-Areas/master/naturalareasdata.csv",
     center: [-79.39775965337452,43.663461999999996], //Lng, Lat
     zoom: 11, //Default zoom
     title: "Natural Areas Database",
