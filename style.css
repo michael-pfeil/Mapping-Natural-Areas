@@ -27,7 +27,7 @@
     font-size: 14px;
     word-wrap: break-word;
     text-decoration: none;
-    border-bottom: solid rgb(34, 33, 33, .3) 1px;
+    border-bottom: solid #395f2a 1px;
 }
 
 .listings .item:last-child {
