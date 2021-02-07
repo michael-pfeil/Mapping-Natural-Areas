@@ -54,11 +54,14 @@ function buildLocationList(locationData) {
         link.innerHTML =
             '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p>';
 
+        const image = listing.appendChild(document.createElement('img'));
+        image.src="https://viewthevibe.com/wp-content/uploads/2016/04/" + prop[columnHeaders[1]]
+        
         /* Add details to the individual listing. */
         const details = listing.appendChild(document.createElement('div'));
         details.className = 'content';
 
-        for (let i = 1; i < columnHeaders.length; i++) {
+        for (let i = 2; i < columnHeaders.length; i++) {
             const div = document.createElement('div');
             div.innerText += prop[columnHeaders[i]];
             div.className;

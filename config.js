@@ -1,4 +1,3 @@
-
 const config = {
     style: "mapbox://styles/mapbox/light-v10",
     accessToken: "pk.eyJ1IjoiamVubmlmZXJwZmVpbCIsImEiOiJja2puNzZpdW0wcjN6MnluMDY0MWQyM21pIn0.qfZ6ocRVbznPiGbB-omH3Q",
@@ -7,7 +6,7 @@ const config = {
     zoom: 11, //Default zoom
     title: "Natural Areas Database",
     description: "You can search by address to sort the list below by distance. You can also filter the park usage, environment and historical significance.",
-    sideBarInfo: ["Name", "Blurb"],
+    sideBarInfo: ["Name", "Image", "Blurb"],
     popupInfo: ["Name"],
     filters: [
         {
