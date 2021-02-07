@@ -47,18 +47,28 @@ function buildLocationList(locationData) {
         /* Assign the `item` class to each listing for styling. */
         listing.className = 'item';
 
+        listing.classList.add('row');
+        leftSide = listing.appendChild(document.createElement('div'));
+        leftSide.className = 'column';
+        leftSide.style = 'margin-bottom: 5px';
+
+        image = leftSide.appendChild(document.createElement('img'));
+        image.src="https://viewthevibe.com/wp-content/uploads/2016/04/" + prop[columnHeaders[1]];
+
+        rightSide = listing.appendChild(document.createElement('div'));
+        rightSide.style = 'margin-left: 5px;';
+        rightSide.className = 'column';
+        //const link = rightSide.appendChild(document.createElement('div'));
+
         /* Add the link to the individual listing created above. */
-        const link = listing.appendChild(document.createElement('button'));
+        const link = rightSide.appendChild(document.createElement('button'));
         link.className = 'title';
         link.id = 'link-' + prop.id;
         link.innerHTML =
             '<p style="line-height: 1.25">' + prop[columnHeaders[0]] + '</p>';
 
-        const image = listing.appendChild(document.createElement('img'));
-        image.src="https://viewthevibe.com/wp-content/uploads/2016/04/" + prop[columnHeaders[1]]
-        
         /* Add details to the individual listing. */
-        const details = listing.appendChild(document.createElement('div'));
+        const details = rightSide.appendChild(document.createElement('div'));
         details.className = 'content';
 
         for (let i = 2; i < columnHeaders.length; i++) {

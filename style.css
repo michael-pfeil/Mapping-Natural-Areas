@@ -92,5 +92,10 @@
 
   }
 
+.row {
+  display: flex;
+}
 
-  
+.column {
+  flex: 50%;
+}
